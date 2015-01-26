@@ -1,0 +1,167 @@
+name: SRParty
+main: sr.party.Party
+version: 1.1
+author: cr0ssVtW, acidsin
+Description: SR Party Stuff
+softdepend: [Vault]
+commands:
+   blah:
+      description: blah
+      usage: /blah
+   pcspy:
+      description: Party Chat Spy
+      usage: /pcspy
+      permission: srparty.chat.spy
+      permission-message: You do not have permission.
+   pc:
+      description: Party Chat
+      usage: /pc
+      permission: srparty.chat
+      permission-message: You do not have permission.
+   partycreate:
+      description: Party Create
+      usage: /partycreate
+      permission: srparty.create
+      permission-message: You do not have permission.
+      aliases: [pcreate]
+   partyinvite:
+      description: Party Invite
+      usage: /partyinvite
+      permission: srparty.invite
+      permission-message: You do not have permission.
+      aliases: [pinvite]
+   partyaccept:
+      description: Party Accept
+      usage: /partyaccept
+      permission: srparty.accept
+      permission-message: You do not have permission.
+      aliases: [paccept]
+   partydeny:
+      description: Party Deny
+      usage: /partydeny
+      permission: srparty.deny
+      permission-message: You do not have permission.
+      aliases: [pdeny]
+   partyleave:
+      description: Party Leave
+      usage: /partyleave
+      permission: srparty.leave
+      permission-message: You do not have permission.
+      aliases: [pleave]
+   partykick:
+      description: Party Kick
+      usage: /partykick
+      permission: srparty.create
+      permission-message: You do not have permission.
+      aliases: [pkick]
+   pcancel:
+      descrption: Party Invite Cancel
+      usage: /pcancel playername
+      permission: srparty.invite
+      permission-message: You do not have permission.
+      aliases: [pcancel]
+   removeknockback:
+      description: Remove Knockback from item in hand.
+      usage: /removeknockback
+   removefire:
+      description: Remove Fire Aspect from your item in hand.
+      usage: /removefire
+   ghost:
+      description: Go into ghost form!
+      usage: /ghost
+      permission: ghost.vanish
+      permission-message: You do not have permission to go into ghost form.
+   unghost:
+      description: Go back to normal form.
+      usage: /unghost
+      permission: ghost.unvanish
+      permission-message: You do not have permission to return to the land of the living here.  
+   tailor:
+      description: Tailor stuff!
+      usage: /tailor
+   brew:
+      description: Brewer stuff!
+      usage: /tailor
+   brewlist:
+      description: Brewer Listing
+      usage: /brewlist
+   powerbrew:
+      description: Brewer stuff!
+      usage: /tailor
+   classes:
+      description: Class list.
+      usage: /classes
+   nctoggle:
+      description: Toggle NoCheat Spam
+      usage: /nctoggle
+<<<<<<< HEAD
+   fireclear:
+      description: Clear out fireballs
+      usage: /fireclear
+=======
+   clear:
+      description: Clear out fireballs
+      usage: /clear
+>>>>>>> parent of 85fa1fd... Update plugin.yml
+   frameclear:
+      description: Clear Frames
+      usage: /frameclear
+permissions:
+  srparty.*:
+    description: Gives all permission nodes.
+    children:
+      srparty.chat: true
+      srparty.create: true
+      srparty.invite: true
+      srparty.accept: true
+      srparty.deny: true
+      srparty.leave: true
+    default: false
+  srparty.create:
+    description: Create privs
+    default: true
+  srparty.invite:
+    description: Invite privs
+    default: true
+  srparty.accept:
+    description: Accept privs
+    default: true
+  srparty.deny:
+    description: Deny privs
+    default: true
+  srparty.leave:
+    description: Leave privs
+    default: true
+  archer.daze:
+    description: Archery Daze
+    default: false
+  archer.daze:
+    description: Archery Daze and Fire
+    default: false
+  warrior.bleed:
+    description: Warrior stuff!
+    default: false
+  bard.use:
+    description: Bard stuff!
+    default: false
+  berserker.use:
+    description: Berserker stuff!
+    default: false
+  shaman.use:
+    description: Shaman stuff!
+    default: false
+  shaman.use.totem:
+    description: Healing Totem for the shaman - pulses heals for the group, not the shaman.
+    default: false
+  shaman.use.callofthewild:
+    description: Call of the Wild for the shaman grants movespeed and damage.
+    default: false
+  shaman.use.curse:
+    description: Curse your target, blinding and slowing them.
+    default: false
+  sr.marksman.leap:
+    description: New Marksman leap ability.
+    default: false
+    
+    
+    
